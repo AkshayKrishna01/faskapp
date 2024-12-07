@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Classroom - Courses</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="{{ url_for('home') }}">
+          Virtual Classroom
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="{{ url_for('content') }}">
+                Courses
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('register') }}">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container my-5">
+      <h2 class="text-center mb-4">Available Courses</h2>
+      <div class="row">
+        <!-- Course 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="{{ url_for('static', filename='ds.jpg') }}" alt="Data Structure">
+            <div class="card-body">
+              <h5 class="card-title">Data Structure</h5>
+              <p class="card-text">Learn the basics of data structures and algorithms.</p>
+              <a href="{{ url_for('dss') }}" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Course 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="{{ url_for('static', filename='md.jpg') }}" alt="Mobile Development">
+
+            <div class="card-body">
+              <h5 class="card-title">Mobile Development</h5>
+              <p class="card-text">Explore Mobile Development topics in computer science.</p>
+              <a href="{{ url_for('mdd') }}" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Course 3 -->
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="{{ url_for('static', filename='wb.jpg') }}" alt="Website Development">
+
+            <div class="card-body">
+              <h5 class="card-title">Website Development</h5>
+              <p class="card-text">Learn to Develop Web applications in Depth BY Enrolling the Course</p>
+              <a href="{{ url_for('wdd') }}" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <p>&copy; 2024 Virtual Classroom. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

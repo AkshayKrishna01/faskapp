@@ -1,0 +1,173 @@
+/* Custom styles */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+ 
+    font-family: "Poppins", sans-serif; /* Updated font */
+  }
+  
+  .btn-primary {
+    font-size: 0.9rem; /* Reduced size */
+    padding: 0.5rem 1rem; /* Smaller padding */
+    background-color:#e5c200;
+    border: none;
+  }
+  .btn-primary:hover {
+    background-color: #ffd700;
+  }
+  .hero {
+    padding: 2rem 0; /* Reduced padding */
+  }
+  .features .card {
+    padding: 1rem; /* Reduced padding inside cards */
+  }
+
+main {
+  flex: 1;
+}
+/* More specific selector for navbar */
+nav.navbar {
+  background-color: #ffd700 !important; /* Yellow background */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #212121 !important; /* Black text for nav links */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff !important; /* White text when hovering over the links */
+}
+
+.navbar-dark .navbar-brand {
+  color: #212121 !important; /* Black text for the brand */
+}
+
+.navbar-dark .navbar-brand:hover {
+  color: #fff !important; /* White text when hovering over the brand */
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  background-color: #212121; /* Black background */
+  color: #ffd700 !important; /* Yellow text */
+  font-weight: bold;
+  border-radius: 5px; /* Optional: rounded corners for the active link */
+  padding: 5px 10px; /* Optional: adds spacing for better visual separation */
+}
+
+/* Toggle button styling for small screens */
+.navbar-toggler-icon {
+  background-color: #212121 !important; /* Black icon for the toggle button */
+}
+img{
+  height:200px;
+  width:355px;
+  
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(rgba(255, 223, 0, 0.9), rgba(255, 223, 0, 0.7));
+  color: black;
+  padding: 100px 0;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero .lead {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+/* Features section */
+.features .card {
+  transition: transform 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.features .card:hover {
+  transform: translateY(-5px);
+}
+
+.features h3 {
+  color: #ffd700;
+  margin-bottom: 1rem;
+}
+
+/* Card styling */
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Button and form control styling */
+.btn-primary {
+  background-color: #ffd700;
+  color: black;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #e5c200;
+}
+
+.form-control {
+  padding: 0.8rem;
+  border-radius: 8px;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 223, 0, 0.25);
+}
+
+/* Course cards */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Badge styling */
+.badge {
+  background-color: #ffd700;
+  color: black;
+  padding: 0.5em 1em;
+  font-size: 0.9em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero .lead {
+    font-size: 1.2rem;
+  }
+}
+.btn-primary{
+  color: black;
+  background-color:#ffd700;
+}
+.btn-primary:hover{
+  color: #ffd700;
+  background-color:black;
+ }
+ .img-f{
+  height:400px;
+  width:400px;
+  margin: 20px;
+  box-shadow: 2px 4px 8px #212121;
+  border-radius:10px;
+ }
